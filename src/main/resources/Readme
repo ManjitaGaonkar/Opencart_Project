@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------------------------
+Project structure:
+
+src/main/java:
+	com.config:
+		Config.properties
+		
+	com.pages:
+		LandingPage.java
+		CommunityForumPage.java
+		UnansweredPage.java
+		UnansweredSearchPage.java
+		
+	com.testdata:
+		testdata.xlsx	
+			
+	com.utility:
+		Config.java
+		ConfigReader.java
+		ExcelReader.ja
+		ExtentReporterManager.java
+		Utility.java
+		
+src/test/java:
+		apphooks:
+		ApplicationHooks.java
+	
+		communityforum_1_stepdefinition:
+		CommunityForum_1_Step.java
+		
+		communityforum_2_stepdefinitions:
+		CommunityForum_2_Step.java	
+		
+		excel_stepdefinitions:
+		Excel_Step.java
+		
+		testrunner:
+		CommunityForum_1_TestRunner.java
+		CommunityForum_1_TestRunner.java
+		Excel_TestRunner.java
+			
+src/main/resources:
+	ReadMe
+						
+src/test/resources:
+	features folder
+		CommunityForum_1.feature	
+		CommunityForum_2.feature
+		Excel.feature
+
+drivers folder:
+	chromedriver.exe
+	
+screenshots folder:
+	file.png	
+
+Extent folder:	
+	extent_reports	
+	
+pom.xml			
+--------------------------------------------------------------------------------------------------
+Project creation sequence:
+
+Create maven project
+Add the dependencies in pom.xml
+Maven project will have 4 sections by default(if not then create them):
+	src/main/java
+	src/main/resources
+	src/test/java
+	src/test/resources
+
+Create the required packages, classes, files in them as per below sequence:
+
+Step 1 --> Create Feature file
+Step 2 --> Create Config.java
+Step 3 --> Create Config.properties
+Step 4 --> Create ConfigReader.java
+Step 5 --> Create Utility.java
+Step 6 --> Create LandingPage.java
+Step 7 --> Create CommunityForumPage.java
+Step 8 --> Create UnansweredPage.java
+Step 9 --> Create UnansweredSearchPage.java
+Step 10 --> Create ApplicationHooks.java
+Step 11 --> Create LandingPageStep.java
+Step 12 --> Create CommunityForum_Step.java
+Step 13 --> Create Excel_Step.java
+Step 14 --> Create CommunityForum_TestRunner.java
+Step 15 --> Create Excel_TestRunner.java
+
+Create the drivers folder and keep driver in it
+Create the screenshots folder to keep screenshots in it
+Create the extent folder
+Run the tests by using Test class(individual test class) or pom.xml
+
+See the reports in test-output folder(created by testng)
+See the reports in target folder(created by maven)

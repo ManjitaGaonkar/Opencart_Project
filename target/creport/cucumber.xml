@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="33.332" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Community Forum Page" name="Verify community forum search functionality with valid data - Example #1.1" time="12.843">
+<system-out><![CDATA[
+Given Chrome is opened and opencart app is opened...........................passed
+Then User navigates onto landing page and able to see logo..................passed
+When User clicks on resources dropdown......................................passed
+And User clicks on community forum..........................................passed
+Then User navigates on community forum page.................................passed
+Then User click on dropdown list of search button and select Unanswered topics option.passed
+When User fills the data from given sheetname "Sheet1" and rownumber 0......passed
+And clicks on search icon...................................................passed
+Then User is able to see all the related topics.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Community Forum Page" name="Verify community forum search functionality with valid data - Example #1.2" time="20.466">
+<system-out><![CDATA[
+Given Chrome is opened and opencart app is opened...........................passed
+Then User navigates onto landing page and able to see logo..................passed
+When User clicks on resources dropdown......................................passed
+And User clicks on community forum..........................................passed
+Then User navigates on community forum page.................................passed
+Then User click on dropdown list of search button and select Unanswered topics option.passed
+When User fills the data from given sheetname "Sheet1" and rownumber 1......passed
+And clicks on search icon...................................................passed
+Then User is able to see all the related topics.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
